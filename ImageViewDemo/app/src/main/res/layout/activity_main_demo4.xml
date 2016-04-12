@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:text="Orginal image size: 1024 x 768" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType (default)" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: center" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="center"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: centerCrop" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="centerCrop"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: centerInside" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="centerInside"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: fitCenter" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="fitCenter"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: fitStart" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="fitStart"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: fitEnd" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="fitEnd"
+      android:src="@drawable/image001" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="300dp x 300dp, scaleType: fitXY" />
+
+    <ImageView
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_marginBottom="50dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/yellow50"
+      android:scaleType="fitXY"
+      android:src="@drawable/image001" />
+
+  </LinearLayout>
+
+
+</ScrollView>

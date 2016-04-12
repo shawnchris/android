@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/activity_vertical_margin" >
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/to"
+      android:textSize="20sp"/>
+
+    <EditText
+      android:id="@+id/to"
+      android:inputType="textPersonName|textCapWords"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:hint="@string/hint_to"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/subject"
+      android:textSize="20sp"/>
+
+    <EditText
+      android:id="@+id/subject"
+      android:inputType="textEmailSubject|textCapWords|textAutoCorrect"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:hint="@string/hint_subject"/>
+
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/message"
+    android:textSize="20sp"/>
+
+  <EditText
+    android:id="@+id/message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textAutoCorrect"
+    android:imeOptions="actionSend"
+    android:hint="@string/hint_message"/>
+
+  <!-- alternative setting for the message text field to allow multiple lines of text -->
+  <!--
+  android:inputType="textAutoCorrect|textMultiLine"
+  -->
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="right" >
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/cancel"/>
+
+    <Button
+      android:id="@+id/send"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:text="@string/ok"/>
+
+    <!-- Alternative for the Send button to use the onClick attribute -->
+
+    <!--
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/ok"
+        android:onClick="sendMessage"/>
+    -->
+
+  </LinearLayout>
+
+</LinearLayout>

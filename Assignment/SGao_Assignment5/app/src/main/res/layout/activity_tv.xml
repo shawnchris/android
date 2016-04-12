@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green50"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My TV"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TV Power:"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speaker Volume:     "
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Channel:"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Remote Control"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:padding="10dp">
+        <TableRow>
+            <TextView  android:text="Power"/>
+            <Switch
+                android:id="@+id/power_button"
+                android:layout_column="2"
+                android:layout_span="3"
+                android:layout_gravity="center"
+                android:checked="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="Volume"/>
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_column="2"
+                android:layout_span="3"
+                android:max="100"
+                android:progress="50"/>
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="Channel"/>
+            <Button
+                android:id="@+id/button_0"
+                android:layout_column="2"
+                android:text="0"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_1"
+                android:layout_column="2"
+                android:text="1"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_2"
+                android:layout_column="2"
+                android:text="2"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_3"
+                android:layout_column="2"
+                android:text="3"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_4"
+                android:layout_column="2"
+                android:text="4"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_5"
+                android:layout_column="2"
+                android:text="5"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_6"
+                android:layout_column="2"
+                android:text="6"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_7"
+                android:layout_column="2"
+                android:text="7"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_8"
+                android:layout_column="2"
+                android:text="8"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_9"
+                android:layout_column="2"
+                android:text="9"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_plus"
+                android:layout_column="2"
+                android:text="CH+"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_minus"
+                android:layout_column="2"
+                android:text="CH-"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <TextView  android:text="Favorite\nChannel"
+                android:gravity="top"/>
+            <Button
+                android:id="@+id/button_fav1"
+                android:layout_column="2"
+                android:text="ABC"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_fav2"
+                android:layout_column="2"
+                android:text="NBC"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_fav3"
+                android:layout_column="2"
+                android:text="CBS"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/button_switch_to_dvr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SWITCH TO DVR"/>
+        <Button
+            android:id="@+id/button_switch_to_config"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="CONFIGURE"/>
+
+    </LinearLayout>
+</LinearLayout>

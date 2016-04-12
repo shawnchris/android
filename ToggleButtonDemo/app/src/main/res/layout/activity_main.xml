@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:text="Toggle Buttons"
+    android:textSize="16sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <ToggleButton
+      android:id="@+id/toggle1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onToggleClicked"
+      android:tag="toggle1" />
+
+    <ToggleButton
+      android:id="@+id/toggle2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      android:onClick="onToggleClicked"
+      android:tag="toggle2" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <ToggleButton
+      android:id="@+id/toggle3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onToggleClicked"
+      android:tag="toggle3"
+      android:textOff="Vibrate off"
+      android:textOn="Vibrate on" />
+
+    <ToggleButton
+      android:id="@+id/toggle4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      android:onClick="onToggleClicked"
+      android:tag="toggle4"
+      android:textOff="Vibrate off"
+      android:textOn="Vibrate on" />
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:text="Switches"
+    android:textSize="16sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Switch
+      android:id="@+id/switch1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:onClick="onSwitchClicked"
+      android:tag="switch1"
+      android:text="Standard" />
+
+    <Switch
+      android:id="@+id/switch2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:checked="true"
+      android:onClick="onSwitchClicked"
+      android:tag="switch2" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Switch
+      android:id="@+id/switch3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onSwitchClicked"
+      android:tag="switch3"
+      android:text="Customized"
+      android:showText="true"
+      android:textOff="N"
+      android:textOn="Y" />
+
+    <Switch
+      android:id="@+id/switch4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      android:onClick="onSwitchClicked"
+      android:paddingLeft="10dp"
+      android:tag="switch4"
+      android:showText="true"
+      android:textOff="N"
+      android:textOn="Y" />
+  </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">sgao_assignment1</string>
+
+    <string name="hello_world">Hello CSC472! Welcome to Android Development!</string>
+    <string name="action_settings">Settings</string>
+    <string name="font_family">sans-serif-condensed</string>
+</resources>

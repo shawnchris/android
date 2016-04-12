@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configure Favorite Channels"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:padding="10dp">
+        <TableRow android:layout_margin="5dp">
+            <TextView  android:text="Favorite\nChannel\nButton"/>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_column="2"
+                android:layout_span="3">
+                <RadioButton
+                    android:id="@+id/radio_left"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Left"
+                    android:onClick="onButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/radio_middle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Middle"
+                    android:onClick="onButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/radio_right"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Right"
+                    android:onClick="onButtonClicked"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow android:layout_margin="5dp">
+            <TextView  android:text="Label"/>
+            <EditText
+                android:id="@+id/label"
+                android:layout_column="2"
+                android:layout_span="3" />
+        </TableRow>
+        <TableRow android:layout_margin="5dp">
+            <TextView  android:text="Channel"/>
+            <TextView
+                android:id="@+id/channel"
+                android:layout_column="2"
+                android:layout_span="3"
+                android:text="1"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_0"
+                android:layout_column="2"
+                android:text="0"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_1"
+                android:layout_column="3"
+                android:text="1"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_2"
+                android:layout_column="4"
+                android:text="2"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_3"
+                android:layout_column="2"
+                android:text="3"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_4"
+                android:layout_column="3"
+                android:text="4"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_5"
+                android:layout_column="4"
+                android:text="5"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_6"
+                android:layout_column="2"
+                android:text="6"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_7"
+                android:layout_column="3"
+                android:text="7"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_8"
+                android:layout_column="4"
+                android:text="8"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_9"
+                android:layout_column="2"
+                android:text="9"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_plus"
+                android:layout_column="3"
+                android:text="CH+"
+                android:onClick="onButtonClicked"/>
+            <Button
+                android:id="@+id/button_minus"
+                android:layout_column="4"
+                android:text="CH-"
+                android:onClick="onButtonClicked"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="8dp">
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_column="3"
+                android:text="CANCEL" />
+            <Button
+                android:id="@+id/button_save"
+                android:layout_column="4"
+                android:text="SAVE"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

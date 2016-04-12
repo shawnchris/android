@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+  <TextView
+    android:id="@+id/to_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/to"
+    android:textSize="20sp"
+    android:layout_alignBaseline="@+id/to" />
+
+  <EditText
+    android:id="@+id/to"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName|textCapWords"
+    android:layout_alignStart="@+id/subject"
+    android:singleLine="true"/>
+
+  <TextView
+    android:id="@+id/subject_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/subject"
+    android:textSize="20sp"
+    android:layout_alignBaseline="@+id/subject" />
+
+  <EditText
+    android:id="@+id/subject"
+    android:inputType="textEmailSubject|textCapWords|textAutoCorrect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/to"
+    android:layout_toEndOf="@+id/subject_label"
+    android:singleLine="true" />
+
+  <TextView
+    android:id="@+id/label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/message"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/subject" />
+
+  <EditText
+    android:id="@+id/entry"
+    android:inputType="textAutoCorrect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/label"/>
+
+  <Button
+    android:id="@+id/ok"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dip"
+    android:text="@string/ok"
+    android:layout_below="@id/entry"
+    android:layout_alignParentEnd="true" />
+
+  <Button
+    android:id="@+id/cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/cancel"
+    android:layout_toStartOf="@id/ok"
+    android:layout_alignTop="@id/ok" />
+
+</RelativeLayout>

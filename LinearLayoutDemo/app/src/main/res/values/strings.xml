@@ -1,0 +1,22 @@
+<resources>
+  <string name="app_name">LinearLayoutDemo</string>
+
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+
+
+  <string name="first">Top</string>
+  <string name="last">Bottom</string>
+
+  <string name="middle">Middle —\nInside a vertical Linear Layout.
+    The layout_height and layout_weight determines the height of the widget and the layout.
+  </string>
+
+  <string name="message">A horizontal Linear Layout with columns of the same width.</string>
+
+  <string name="one">One</string>
+  <string name="two">Two</string>
+  <string name="three">This is the third item.</string>
+  <string name="four">Four</string>
+
+</resources>

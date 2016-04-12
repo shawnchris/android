@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="20dp" >
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Which city have you visited?"
+    android:textSize="16sp"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <CheckBox android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicago"
+                android:checked="true"
+                android:onClick="onCheckboxClicked"/>
+      <CheckBox android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York"
+                android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <CheckBox android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="San Francisco"
+                android:onClick="onCheckboxClicked"/>
+      <CheckBox android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+  </LinearLayout>
+
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Choose your mode of transportation"
+    android:textSize="16sp"/>
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    <RadioButton android:id="@+id/radio1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Airplane"
+                 android:onClick="onRadioButtonClicked"/>
+    <RadioButton android:id="@+id/radio2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Train"
+                 android:onClick="onRadioButtonClicked"/>
+    <RadioButton android:id="@+id/radio3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Car"
+                 android:onClick="onRadioButtonClicked"/>
+  </RadioGroup>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Which type of room would you like to reserve?"
+    android:textSize="16sp"/>
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+    <RadioButton android:id="@+id/radio4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Single"
+                 android:onClick="onRadioButtonClicked"/>
+    <RadioButton android:id="@+id/radio5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Double"
+                 android:checked="true"
+                 android:onClick="onRadioButtonClicked"/>
+    <RadioButton android:id="@+id/radio6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Suite"
+                 android:onClick="onRadioButtonClicked"/>
+  </RadioGroup>
+
+</LinearLayout>
