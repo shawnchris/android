@@ -69,6 +69,12 @@ public class TicTacToe {
      checkWinner to check if a player has won the last click on the board
      */
     public void updateGameBoard(int x, int y) {
+        if (checkWinner(currentPlayer))
+            return;
+        if (winner == 'X' || winner == 'O')
+            return;
+        if (board[x][y] == 'X' || board[x][y] == 'O')
+            return;
         view.update(x, y, currentPlayer);
         board[x][y] = currentPlayer;
         cellsOccupied++;
